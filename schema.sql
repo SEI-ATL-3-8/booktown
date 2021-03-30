@@ -1,0 +1,16 @@
+CREATE TABLE IF NOT EXISTS books (
+  id SERIAL PRIMARY KEY,
+  title TEXT,
+  subjectId INTEGER,
+  authorId INTEGER
+);
+
+CREATE TABLE IF NOT EXISTS subjects (
+  id SERIAL PRIMARY KEY,
+  name TEXT
+);
+
+CREATE TABLE IF NOT EXISTS authors (
+  id SERIAL PRIMARY KEY,
+  name TEXT
+);
