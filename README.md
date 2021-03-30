@@ -2,6 +2,8 @@
 
 ## clone repo and checkout into your own branch!
 
+- Step 0. Click this link and draw an ERB. https://app.dbdesigner.net/designer/schema/new
+  - you can submit a screenshot with your branch.
 - Step 1. You should create a database then connect to it.
 - Step 2. Once you've connected to the database, run the schema file from psql
 - Step 3. Once you've run the schema file, run the seeds file (also from psql) to populate our database!
