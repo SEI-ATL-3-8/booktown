@@ -20,4 +20,4 @@ Tackle the questions below and record the queries for each problem in the soluti
 1. Add a new book by yourself and to any subject of your choosing
 1. Now find that book authored by yourself and change it's author to King Stephen
 1. Get the subject of the 2001 Space Oddyssey
-1. Get any book that starts has Science in it's subject
+1. Get any book that starts or has Science in it's subject
