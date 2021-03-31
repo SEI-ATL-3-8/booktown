@@ -53,4 +53,4 @@ WHERE books.title = '2001: A Space Odyssey';
 SELECT books.title
 FROM books
 JOIN subjects ON subjects.id = books.subjectId
-WHERE subjects.name  like '%Science%';
+WHERE subjects.name  like 'Science%';
