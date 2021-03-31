@@ -1,27 +1,27 @@
 -- 1. get all books by mark lutz
 
-    SELECT books.title 
-    FROM books JOIN authors ON books.authorid = authors.id 
-    WHERE authors.name LIKE '%Mark%';
+SELECT books.title 
+FROM books JOIN authors ON books.authorid = authors.id 
+WHERE authors.name LIKE '%Mark%';
 
 -- 1. get all books in the childrens books subject
 
-SELECT title 
+SELECT books.title 
 FROM books JOIN subjects ON books.subjectid = subjects.id 
 WHERE subjects.name = 'Childrens Books';
 
 -- 1. get all subjects that a given author has written on
 
 SELECT subjects.name 
-FROM authors JOIN books ON authors.id = books.authorid 
-JOIN subjects ON books.subjectid = subjects.id 
+FROM subjects JOIN books ON subjects.id = books.subjectid 
+JOIN authors ON books.authorid = authors.id 
 WHERE authors.name = 'LutzMark';
 
 --  get all authors that have written books on a given subject
 
 SELECT authors.name 
-FROM subjects JOIN books ON subjects.id = books.subjectid 
-JOIN authors ON books.authorid = authors.id
+FROM authors JOIN books ON authors.id = books.authorid
+JOIN subjects ON subjects.id = books.subjectid 
 WHERE subjects.name = 'Computers';
 
 -- 1. get all books by Hogarth Burne
@@ -36,8 +36,7 @@ SELECT * FROM books; - //doesnot have authorid = 8
 -- 1. get the author of Little Women
 
 SELECT authors.name 
-FROM books JOIN subjects ON books.subjectid = subjects.id 
-JOIN authors ON books.authorid = authors.id 
+FROM authors JOIN books ON authors.id = books.authorid
 WHERE books.title = 'Little Women';
 
 -- 1. Add yourself as a new author
