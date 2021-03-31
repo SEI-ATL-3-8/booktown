@@ -1,0 +1,11 @@
+1. SELECT * FROM books JOIN authors on books.authorId = authors.id WHERE authors.id=9;
+2. SELECT * FROM books JOIN subjects on books.subjectId = subjects.id;
+3. SELECT * FROM subjects JOIN books on books.subjectId = subjects.id JOIN authors on books.authorId = authors.id;
+4. SELECT * FROM authors JOIN books on books.authorId = authors.id JOIN subjects on books.subjectId = subjects.id;
+5. SELECT * FROM books JOIN authors on books.authorId = authors.id WHERE authors.name='Hogarth Burne';
+6. SELECT * FROM authors JOIN books on books.authorId = authors.id WHERE books.title='Little Women';
+7. INSERT INTO authors (name) VALUES ('Clement Mwimo');
+8. INSERT INTO books (title, subjectId, authorId) VALUES ('How Computers Work', 10, 4);
+9. UPDATE authors SET name = 'King Stephen' WHERE id=10;
+10. SELECT subjects.name FROM subjects JOIN books ON subjects.id = books.subjectId WHERE books.title='2001: A Space Odyssey';
+11. SELECT * FROM books JOIN subjects on books.subjectId = subjects.id WHERE subjects.name LIKE 'Science%';
