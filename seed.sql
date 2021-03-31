@@ -1,13 +1,13 @@
 INSERT INTO authors (name) VALUES
-('King	Stephen'),
-('Herbert	Frank'),
-('Clarke	Arthur C.'),
+('King Stephen'),
+('Herbert Frank'),
+('Clarke Arthur C.'),
 ('Bourgeois	Paulette'),
 ('Brown	Margaret Wise'),
-('Alcott	Louisa May'),
-('Bianco	Margery Williams'),
-('Hogarth	Burne'),
-('Lutz	Mark');
+('Alcott Louisa May'),
+('Bianco Margery Williams'),
+('Hogarth Burne'),
+('Lutz Mark');
 
 INSERT INTO subjects (name) VALUES
 ('Business'),
