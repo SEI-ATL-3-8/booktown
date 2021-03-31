@@ -8,14 +8,18 @@ JOIN subjects ON books.subjectId = subjects.id
 WHERE subjects.name = 'Childrens Books';
 
 3. 
-SELECT DISTINCT name FROM subjects
-JOIN books ON books.subjectId = subjects.id;
+SELECT DISTINCT subjects.name FROM subjects
+JOIN books ON books.subjectId = subjects.id
+JOIN authors ON authors.id = books.authorId
+WHERE authors.name LIKE 'Lutz%Mark';
 
-4. (More informative)
+
+4. 
 SELECT DISTINCT authors.name
 FROM authors
 JOIN books ON authors.id = books.authorId
-JOIN subjects ON subjects.id = books.subjectId;
+JOIN subjects ON subjects.id = books.subjectId
+WHERE subjects.name LIKE '%Science%';
 
 5.
 SELECT books.title 
